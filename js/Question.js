@@ -39,7 +39,7 @@ function questions (){
     background(caseBGImg);
     if (character === 1){
         //first quiz of sherlock
-        if (gameState === 3){
+        if (gameState === 2){
             fill('white');
             textSize(15);
             text("In which story does for the first time Holmes and Watson meet?", 100, 50);
@@ -65,7 +65,7 @@ function questions (){
             text("Hint: Someone is lying", 700, 310)
         }
         //second quiz of sherlock
-        if (gameState === 6){
+        if (gameState === 5){
             fill('white');
             textSize(15);
             text("Which instrument did sherlock loved to play?", 100, 50);
@@ -91,7 +91,7 @@ function questions (){
             text("Hint: You may search it", 700, 310)
         }
         //third quiz of sherlock
-        if (gameState === 9){
+        if (gameState === 8){
             fill('white');
             textSize(15);
             text("in which country did sherlock defeated moriarty?", 100, 50);
@@ -117,7 +117,7 @@ function questions (){
             text("Hint: A M L E N N I T I R", 700, 310)
         }
         //fourth quiz of sherlock
-        if (gameState === 12){
+        if (gameState === 11){
             fill('white');
             textSize(15);
             text("who plays a protagonistic role in A Scandal In Bohemia?", 100, 50);
@@ -145,7 +145,7 @@ function questions (){
     }
     if (character === 2){
         //first quiz of moriarty
-        if (gameState === 3) {
+        if (gameState === 2) {
             fill('white');
             textSize(15);
             text("in which country did sherlock defeated moriarty?", 100, 50);
@@ -171,7 +171,7 @@ function questions (){
             text("Hint: Read the line carefully", 700, 310);
         }
         //second quiz of moriarty
-        if (gameState === 6) {
+        if (gameState === 5) {
             fill('white');
             textSize(15);
             text("In which only novel is Moriarty mentioned?", 100, 50);
@@ -197,7 +197,7 @@ function questions (){
             text("Hint: You may search it", 700, 310);
         }
         //third quiz of moriarty
-        if (gameState === 9) {
+        if (gameState === 8) {
             fill('white');
             textSize(15);
             text("On which year did Moriarty died?", 100, 50);
@@ -223,7 +223,7 @@ function questions (){
             text("Hint: Hint: A M L E N N I T I R", 700, 290);
         }
         //fourth quiz of moriarty
-        if (gameState === 12) {
+        if (gameState === 11) {
             fill('white');
             textSize(15);
             text("After resigning the post of maths professor, what did he become?", 100, 50);

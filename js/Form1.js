@@ -43,10 +43,10 @@ class Form1 {
         this.button.style("height", "40px");
         this.button.style("background", "yellow");
 
-        this.reset.position(displayWidth-80, displayHeight-60);
+        this.reset.position(displayWidth-100, displayHeight-120);
         this.reset.style("background", "brown");
-        this.reset.style("width", "45px");
-        this.reset.style("height","70px");
+        this.reset.style("width", "72px");
+        this.reset.style("height","50px");
 
         this.sherlock.mousePressed(()=>{
             this.sherlock.hide();

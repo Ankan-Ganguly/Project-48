@@ -5,6 +5,7 @@ var game, form,player;
 var character=0;
 var play1Bg, play2Bg, play3Bg;
 var allPlayers;
+var quizBS, caseBS, playBS;
 
 function preload(){
     openingBgImg = loadImage("../images/Opening_BG.jpg");
@@ -12,7 +13,7 @@ function preload(){
     quizBGImg = loadImage("../images/Quiz_BG.jpg");
     reactionImg = loadImage("../images/Reaction_Pic1.jpg");
 
-    quizS = loadSound("../sound/Sherlock_Theme.mp3");
+    quizBS = loadSound("../sound/Sherlock_Theme.mp3");
     caseBS = loadSound("../sound/sherlock_holmes_them.mp3");
     playBS = loadSound("../sound/sherlock-theme-song.mp3");
     //moriartyWinS = loadSound("../sound/did_you_miss_me.mp3");
@@ -45,8 +46,8 @@ function draw(){
             game.case1();
         }
 
-        if (gameState === 1 && keyIsDown("space")) {
-            clear();
+        if (gameState === 1 && keyIsDown(32)) {
+            clear()
             game.update(2);
             var quiz1 = new Quiz(); 
             quiz1.display();
@@ -70,12 +71,12 @@ function draw(){
             text("Press l to move to the next level", width / 2 - 20, height / 4);
             player.lives--;
         }
-        if (gameState === 3 && keyIsDown("l")) {
+        if (gameState === 3 && keyIsDown(108)) {
             clear();
             game.update(4);
             game.case2();
         }
-        if (gameState === 4 && keyIsDown("space")) {
+        if (gameState === 4 && keyIsDown(32)) {
             clear();
             game.update(5);
             var quiz2 = new Quiz();
@@ -99,13 +100,13 @@ function draw(){
             text("Press l to move to the next level", width / 2 - 20, height / 4);
             player.lives--;
         }
-        if (gamestate === 6 && keyIsDown("l")) {
+        if (gameState === 6 && keyIsDown(108)) {
             clear();
             game.update(7);
             game.case3();
             //spawnKnife();
         }
-        if (gameState === 7 && keyIsDown("space")) {
+        if (gameState === 7 && keyIsDown(32)) {
             clear();
             game.update(8);
             var quiz3 = new Quiz();
@@ -129,12 +130,12 @@ function draw(){
             text("Press l to move to the next level", width / 2 - 20, height / 4);
             player.lives--;
         }
-        if (gameState === 9 && keyIsDown("l")) {
+        if (gameState === 9 && keyIsDown(108)) {
             clear();
             game.update(10);
             game.case4();
         }
-        if (gameState === 10 && keyIsDown("space")) {
+        if (gameState === 10 && keyIsDown(32)) {
             clear();
             game.update(11)
             var quiz4 = new Quiz();
@@ -162,7 +163,7 @@ if(character === 2){
         game.case1();
     }
 
-    if (gameState === 1 && keyIsDown("space")) {
+    if (gameState === 1 && keyIsDown(32)) {
         clear();
         game.update(2);
         var quiz1 = new Quiz();
@@ -187,12 +188,12 @@ if(character === 2){
         text("Press l to move to the next level", width / 2 - 20, height / 4);
         player.lives--;
     }
-    if (gameState === 3 && keyIsDown("l")) {
+    if (gameState === 3 && keyIsDown(108)) {
         clear();
         game.update(4);
         game.case2();
     }
-    if (gameState === 4 && keyIsDown("space")) {
+    if (gameState === 4 && keyIsDown(32)) {
         clear();
         game.update(5);
         var quiz2 = new Quiz();
@@ -216,13 +217,13 @@ if(character === 2){
         text("Press l to move to the next level", width / 2 - 20, height / 4);
         player.lives--;
     }
-    if (gamestate === 6 && keyIsDown("l")) {
+    if (gameState === 6 && keyIsDown(108)) {
         clear();
         game.update(7);
         game.case3();
         //spawnKnife();
     }
-    if (gameState === 7 && keyIsDown("space")) {
+    if (gameState === 7 && keyIsDown(32)) {
         clear();
         game.update(8);
         var quiz3 = new Quiz();
@@ -246,12 +247,12 @@ if(character === 2){
         text("Press l to move to the next level", width / 2 - 20, height / 4);
         player.lives--;
     }
-    if (gameState === 9 && keyIsDown("l")) {
+    if (gameState === 9 && keyIsDown(108)) {
         clear();
         game.update(10);
         game.case4();
     }
-    if (gameState === 10 && keyIsDown("space")) {
+    if (gameState === 10 && keyIsDown(32)) {
         clear();
         game.update(11)
         var quiz4 = new Quiz();
